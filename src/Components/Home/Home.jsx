@@ -1,8 +1,28 @@
 import React from 'react'
 
+//imported assets
+import video from '../../assets/video.mp4'
+import aeroplane from '../../assets/takeOff.png'
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='home flex container'>
+      <div className="mainText">
+        <h1>Create a Bucket of Memories With Us</h1>
+      </div>
+
+      <div className="homeImages flex">
+
+
+        <div className="videoDiv">
+          <video src={video} autoPlay muted loop className='video'> </video>
+        </div>
+
+        <img src={aeroplane} className='plane'/>
+
+
+      </div>
+    </div>
   )
 }
 
