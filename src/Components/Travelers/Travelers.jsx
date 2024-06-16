@@ -1,15 +1,15 @@
 import React from 'react'
 //imported destination images======>
-import paris from '../../assets/paris.jpg'
-import paris from '../../assets/NewYork.jpg'
-import paris from '../../assets/London.jpg'
-import paris from '../../assets/Dubai.jpg'
+import paris from '../../assets/Paris.jpg'
+import NewYork from '../../assets/NewYork.jpg'
+import london from '../../assets/London.jpg'
+import dubai from '../../assets/Dubai.jpg'
 
 //imported travellers image =======>
 import traveler1 from '../../assets/user (1).png'
-import traveler1 from '../../assets/user (2).png'
-import traveler1 from '../../assets/user (3).png'
-import traveler1 from '../../assets/user (4).png'
+import traveler2 from '../../assets/user (2).png'
+import traveler3 from '../../assets/user (3).png'
+import traveler4 from '../../assets/user (4).png'
 
 // we are going to use high array method called map to display all the data =======>
   const travelers = [
@@ -57,24 +57,21 @@ const Travelers = () => {
 
   
   return (
-    <div>Travelers</div>
-    <div className=' travelers container section'>
+    <><div>Travelers</div><div className=' travelers container section'>
       <div className="sectionContainer">
         <h2>
           Top travelers of this month
-          </h2>
+        </h2>
 
-          <div className="travelersConatiner grid">
-           
-           {
-            travelers.map(({id, destinationImage, travelerImage, travelerName, socialLink})=>{
-              return(
-                // {/* single passenger card */}
+        <div className="travelersConatiner grid">
 
-                <div key={id} className="singleTraveler">
+          {travelers.map(({ id, destinationImage, travelerImage, travelerName, socialLink }) => {
+            return (
+              // {/* single passenger card */}
+              <div key={id} className="singleTraveler">
 
-                <img src={destinationImage} className='destinationImage'  />
-  
+                <img src={destinationImage} className='destinationImage' />
+
                 <div className="travelerDetails">
                   <div className="travelerPicture">
                     <img src={travelerImage} className='travelerImage' />
@@ -84,16 +81,15 @@ const Travelers = () => {
                     <p>{socialLink}</p>
                   </div>
                 </div>
-  
+
               </div>
-              )
-            })
-           }
+            )
+          })}
 
 
-          </div>
+        </div>
       </div>
 
-    </div>
+    </div></>
   )
 }
