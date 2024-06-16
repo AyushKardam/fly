@@ -23,7 +23,7 @@ const Lounge = () => {
                                 Help through the airport
                             </span>
                             <p>
-                                you can also call airlines from your phone and book a flight ticket
+                                You can also call airlines from your phone and book a flight ticket
                                 to one of your favourite destinations.
                             </p>
                         </div>
@@ -34,7 +34,7 @@ const Lounge = () => {
                                 Priority Boarding
                             </span>
                             <p>
-                                you can also call airlines from your phone and book a flight ticket
+                                You can also call airlines from your phone and book a flight ticket
                                 to one of your favourite destinations.
                             </p>
                         </div>
@@ -45,7 +45,7 @@ const Lounge = () => {
                                 Care on the flight
                             </span>
                             <p>
-                                you can also call airlines from your phone and book a flight ticket
+                                You can also call airlines from your phone and book a flight ticket
                                 to one of your favourite destinations.
                             </p>
                         </div>
@@ -55,7 +55,7 @@ const Lounge = () => {
                                 Chauffeur-drive service
                             </span>
                             <p>
-                                you can also call airlines from your phone and book a flight ticket
+                                You can also call airlines from your phone and book a flight ticket
                                 to one of your favourite destinations.
                             </p>
                         </div>
