@@ -1,8 +1,8 @@
 import React from 'react'
 //imported icons =====>
 
-import {RxCalender} from 'react-icons/rx'
-import {BsSheildCheck} from 'react-icons/bs'
+import {RxCalendar} from 'react-icons/rx'
+import {BsShieldCheck} from 'react-icons/bs'
 import {BsBookmarkCheck} from 'react-icons/bs'
 
 
@@ -23,7 +23,7 @@ const Info = () => {
 
          <div className="singleCard grid">
           <div className="iconDiv flex">
-          <RxCalender className='icon'/>
+          <RxCalendar className='icon'/>
           </div>
           <span className="cardTitle">Book & Relax</span>
           <p>You can also call airlines from your phone and book a flight ticket!</p>
@@ -31,7 +31,7 @@ const Info = () => {
 
          <div className="singleCard grid">
           <div className="iconDiv flex colorOne">
-          <BsSheildCheck className='icon'/>
+          <BsShieldCheck className='icon'/>
           </div>
           <span className="cardTitle">Smart Checklist</span>
           <p>You can also call airlines from your phone and book a flight ticket!</p>

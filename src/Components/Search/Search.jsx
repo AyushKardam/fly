@@ -1,8 +1,8 @@
 import React from 'react'
 // imported icons =======>
   import {HiOutlineLocationMarker} from 'react-icons/hi'
-  import {RiAccountPinCircleline} from 'react-icons/ri'
-  import {RxCalender} from 'react-icons/rx'
+  import {RiAccountPinCircleLine} from 'react-icons/ri'
+  import {RxCalendar} from 'react-icons/rx'
 
 
 const Search = () => {
@@ -41,7 +41,7 @@ const Search = () => {
                {/*single input*/}
           <div className="singleinput flex">
             <div className="iconDiv">
-               <RiAccountPinCircleline className='icon'/>
+               <RiAccountPinCircleLine className='icon'/>
                </div>
                <div className="texts">
                 <h4>Travellers</h4>
@@ -52,7 +52,7 @@ const Search = () => {
                {/*single input*/}
           <div className="singleinput flex">
             <div className="iconDiv">
-               <RxCalender className='icon'/>
+               <RxCalendar className='icon'/>
                </div>
                <div className="texts">
                 <h4>Check In</h4>
@@ -63,7 +63,7 @@ const Search = () => {
             {/*single input*/}
           <div className="singleinput flex">
             <div className="iconDiv">
-               <RxCalender className='icon'/>
+               <RxCalendar className='icon'/>
                </div>
                <div className="texts">
                 <h4>Check Out</h4>

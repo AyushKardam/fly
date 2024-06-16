@@ -12,7 +12,7 @@
 :root {
     --PrimaryColor: hsl(225, 50%, 48%);
     --SecondaryColor: hsl(180, 17%, 95%);
-    --colorone: hsl(15, 74%, 76%);
+    --colorOne: hsl(15, 74%, 76%);
     --colorTwo: hsl(28, 100%, 82%);
     --HoverColor: hsl(225, 56%, 59%);
     --whiteColor: hsl(0, 0%, 100%);
@@ -237,6 +237,15 @@ li {
             transition: .5 ease-in-out;
         }
     }
+
+    .navbar_With_Bg{
+        background: var(--SecondaryColor);
+        padding: .5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+    }
+
+   
 }
 
 //Home section styling
@@ -284,7 +293,6 @@ li {
 
 
 // search section styling =======>
-
 
 .search {
     .sectionContainer {
@@ -375,6 +383,7 @@ li {
 }
 
 
+
 // support section styling =======>
 .support {
     .sectionContainer {
@@ -391,7 +400,7 @@ li {
         }
 
         .infoDiv {
-            margin-top: auto;
+            margin-top: 2rem;
             gap: 1.5;
 
 
@@ -399,7 +408,9 @@ li {
                 gap: 1.5rem;
 
                 .singleInfo {
-                    number {
+                    
+                    .number {
+                        gap: 1.5rem;
                         background: var(--PrimaryColor);
                         padding: 5px 12px;
                         border-radius: 3rem;
@@ -411,7 +422,9 @@ li {
                     }
 
                     .colorOne {
+                        
                         background: var(--colorOne);
+                        
                     }
 
                     .colorTwo {
@@ -420,7 +433,8 @@ li {
                 }
             }
 
-            .imgDiv {
+            .imageDiv {
+                
                 margin: auto;
 
                 img {
@@ -435,12 +449,14 @@ li {
 
 
 
+
+
 // Info section styling =======>
 .info {
     background: var(--SecondaryColor);
 
     .infoContainer {
-        .titleDev {
+        .titleDiv {
             flex-direction: column;
             text-align: center;
             gap: 1.5rem;
@@ -482,7 +498,7 @@ li {
                     }
 
                     .colorOne {
-                        background: var(--colorone);
+                        background: var(--colorOne);
 
                     }
 
@@ -497,6 +513,8 @@ li {
     }
 }
 
+
+
 // lounge  section styling =======>
 .lounge {
     .sectionContainer {
@@ -505,7 +523,7 @@ li {
         .imgDiv {
             margin: auto;
 
-            .img {
+            img {
                 width: 100%;
                 max-width: 430px;
 
@@ -517,7 +535,7 @@ li {
                 margin-top: 1rem;
                 gap: 1.5rem;
 
-                .singleGrid {
+                .singlrGrid {
                     .gridTitle {
                         display: block;
                         padding-bottom: .5rem;
@@ -534,155 +552,126 @@ li {
 
 }
 
-// travelers styling section 
-.travelers {
-    .sectionContainer {
-        text-align: center;
-
-        .travelersConatiner {
-            margin-top: 1rem;
-            gap: 1.5rem;
-
-            .singleTraveler {
-                position: relative;
-                height: 320px;
-                width: 85%;
-                max-width: 250px;
-                overflow: hidden;
-                border-radius: 10rem;
-                gap: 1rem;
-                margin: auto;
-
-                .destinationImage,
-                .travelerPicture,
-                .travelerName {
-                    position: absolute;
-                }
 
 
-                .destinationImage {
-                    height: 100%;
-                    width: 100%;
-                    top: 0;
-                    right: 0;
-                    left: 0;
-                    bottom: 0;
-                    object-fit: cover;
-                }
+// // travelers styling section 
+// .travelers {
+//     .sectionContainer {
+//         text-align: center;
 
-                .travelerPicture {
-                    height: 50%;
-                    width: 50%;
-                    object-fit: cover;
-                    border-radius: 50%;
-                    bottom: 30px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    border: 5px solid rgba(225, 225, 225, 0.637);
-                    transition: var(--transition);
-                    animation: animated 2.3s infinite;
-                }
+//         .travelersConatiner {
+//             margin-top: 1rem;
+//             gap: 1.5rem;
 
-                @keyframes animated {
-                    0% {
-                        transform: translateY(0px);
-                    }
+//             .singleTraveler {
+//                 position: relative;
+//                 height: 320px;
+//                 width: 85%;
+//                 max-width: 250px;
+//                 overflow: hidden;
+//                 border-radius: 10rem;
+//                 gap: 1rem;
+//                 margin: auto;
 
-                    50% {
-                        transform: translateY(8px);
-                    }
-
-                    100% {
-                        transform: translateY(0px);
-                    }
-
-                }
-
-                .travelersName {
-                    bottom: -100%;
-                    width: 100%;
-                    height: max-content;
-                    background: var(--whiteColor);
-                    padding: 1.5rem 1rem;
-                    transition: var(--transition);
-                    animation: animatedBorders 2.3s infinite;
-
-                    span {
-                        display: block;
-                        color: black;
-                        font-weight: 700;
-
-                    }
-
-                    p {
-                        color: var(--PrimaryColor);
-                        font-style: italic;
-                    }
-                }
-
-                @keyframes animatedBorders {
-                    0% {
-                        border-radius: 0rem;
-                    }
-
-                    50% {
-                        border-radius: 2rem;
-                    }
-
-                    100% {
-                        border-radius: 0rem;
-                    }
-
-                }
-
-                &:hover {
-                    .travelerName {
-                        bottom: 0;
-                        transition: 1s ease-in-out;
-                    }
-
-                    .travelerImage {
-                        bottom: 110px;
-                        transition: 1s ease-in-out;
-                    }
-
-                }
+//                 .destinationImage,
+//                 .travelerPicture,
+//                 .travelerName {
+//                     position: absolute;
+//                 }
 
 
-            }
+//                 .destinationImage {
+//                     height: 100%;
+//                     width: 100%;
+//                     top: 0;
+//                     right: 0;
+//                     left: 0;
+//                     bottom: 0;
+//                     object-fit: cover;
+//                 }
 
-        }
-    }
-}
+//                 .travelerPicture {
+//                     height: 50%;
+//                     width: 50%;
+//                     object-fit: cover;
+//                     border-radius: 50%;
+//                     bottom: 30px;
+//                     left: 50%;
+//                     transform: translateX(-50%);
+//                     border: 5px solid rgba(225, 225, 225, 0.637);
+//                     transition: var(--transition);
+//                     animation: animated 2.3s infinite;
+//                 }
 
-// subscribers styling section
-.subscribe {
-    background: var(--SecondaryColor);
+//                 @keyframes animated {
+//                     0% {
+//                         transform: translateY(0px);
+//                     }
 
-    .sectionContainer {
-        text-align: center;
+//                     50% {
+//                         transform: translateY(8px);
+//                     }
 
-        .inputDiv {
-            margin-top: 1rem;
-            flex-direction: column;
-            background: var(--whiteColor);
-            border-radius: 1rem;
+//                     100% {
+//                         transform: translateY(0px);
+//                     }
 
-            input {
-                border: none;
-                outline: none;
-                background: transparent;
-                padding: 1rem .5rem;
+//                 }
 
-                &:placeholder {
-                    font-size: 13px;
-                    opacity: .5;
-                }
-            }
+//                 .travelerName {
+//                     bottom: -100%;
+//                     width: 100%;
+//                     height: max-content;
+//                     background: var(--whiteColor);
+//                     padding: 1.5rem 1rem;
+//                     transition: var(--transition);
+//                     animation: animatedBorders 2.3s infinite;
 
-            .btn {
-                width: 100%;
-            }
-        }
-    }
-}
+//                     span {
+//                         display: block;
+//                         color: black;
+//                         font-weight: 700;
+
+//                     }
+
+//                     p {
+//                         color: var(--PrimaryColor);
+//                         font-style: italic;
+//                     }
+//                 }
+
+//                 @keyframes animatedBorders {
+//                     0% {
+//                         border-radius: 0rem;
+//                     }
+
+//                     50% {
+//                         border-radius: 2rem;
+//                     }
+
+//                     100% {
+//                         border-radius: 0rem;
+//                     }
+
+//                 }
+
+//                 &:hover {
+//                     .travelerName {
+//                         bottom: 0;
+//                         transition: 1s ease-in-out;
+//                     }
+
+//                     .travelerImage {
+//                         bottom: 110px;
+//                         transition: 1s ease-in-out;
+//                     }
+
+//                 }
+
+
+//             }
+
+//         }
+//     }
+// }
+

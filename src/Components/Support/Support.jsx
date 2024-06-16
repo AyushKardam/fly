@@ -4,7 +4,7 @@ import gridImage from '../../assets/Images-Grid.png'
 
 const Support = () => {
   return (
-    <><div>Support</div><div className='support container section'>
+    <div className='support container section'>
       <div className="sectionContainer">
 
         <div className="tittlesDiv">
@@ -28,6 +28,7 @@ const Support = () => {
 
             <div className="singleInfo">
               <span className='number colorOne'>02</span>
+              
               <h4>Chauffeur services at your arrival</h4>
               <p>
                 Find help with booking and travel plans , see what to expect along
@@ -52,6 +53,8 @@ const Support = () => {
         </div>
 
       </div>
-    </div></>
+    </div>
   )
 }
+
+export default Support
