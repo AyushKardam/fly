@@ -310,12 +310,13 @@ li {
             width: 100%;
             margin: auto;
 
-            .singlebtn {
+            .singleBtn {
                 padding: .8rem 1.5rem;
                 font-size: 13px;
                 border-radius: 3rem;
                 width: 80%;
                 text-align: center;
+                cursor: pointer
 
                 &:hover {
                     background: var(--PrimaryColor);
@@ -371,10 +372,13 @@ li {
                             opacity: .5;
                         }
                     }
-
+            
 
                 }
             }
+            .btnBlock{
+                justify-content: center;
+            
         }
 
 
