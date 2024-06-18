@@ -56,7 +56,7 @@ const Support = () => {
 
           </div>
 
-          <div data-aos = 'fade-left' data-aos-duration='2500' className="imageDiv">
+          <div data-aos = 'fade-up' data-aos-duration='2500' className="imageDiv">
             <img src={gridImage} />
           </div>
         </div>
