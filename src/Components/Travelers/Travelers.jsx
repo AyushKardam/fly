@@ -14,8 +14,8 @@ import traveler2 from '../../assets/user (2).png'
 import traveler3 from '../../assets/user (3).png'
 import traveler4 from '../../assets/user (4).png'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+// import Aos from 'aos'
+// import 'aos/dist/aos.css'
 
 
 // we are going to use high array method called map to display all the data =======>
@@ -63,9 +63,9 @@ const travelers = [
 
 const Travelers = () => {
     
-    useEffect(()=>{
-        Aos.init({duration:2000})
-    }, [])
+    // useEffect(()=>{
+    //     Aos.init({duration:2000})
+    // }, [])
 
 
     

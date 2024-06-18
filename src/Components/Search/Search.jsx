@@ -1,17 +1,17 @@
-import React,{useEffect from 'react'
+import React,{useEffect} from 'react'
 // imported icons =======>
   import {HiOutlineLocationMarker} from 'react-icons/hi'
   import {RiAccountPinCircleLine} from 'react-icons/ri'
   import {RxCalendar} from 'react-icons/rx'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+// import Aos from 'aos'
+// import 'aos/dist/aos.css'
 
 const Search = () => {
 
-useEffect(()=>{
-  Aos.init({duration: 2500})
-}, [])
+// useEffect(()=>{
+// //   Aos.init({duration: 2500})
+// // }, [])
   
   return (
     <div className='search container section'>
