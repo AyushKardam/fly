@@ -72,7 +72,7 @@ const Travelers = () => {
     return (
         <div className=' travelers container section'>
             <div className="sectionContainer">
-                <h2  >
+                <h2 data-aos = 'fade-left' data-aos-duration='2500' >
                     Top travelers of this month
                 </h2>
 
@@ -81,7 +81,7 @@ const Travelers = () => {
                     {travelers.map(({ id, destinationImage, travelerImage, travelerName, socialLink }) => {
                         return (
                             // {/* single passenger card */}
-                            <div key={id} className="singleTraveler">
+                            <div data-aos = 'fade-up' data-aos-duration='2500' key={id} className="singleTraveler">
 
                                 <img src={destinationImage} className='destinationImage' />
 
