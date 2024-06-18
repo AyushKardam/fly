@@ -318,6 +318,7 @@ li {
                 border-radius: 3rem;
                 width: 80%;
                 text-align: center;
+                cursor: pointer;
 
                 &:hover {
                     background: var(--PrimaryColor);
@@ -340,6 +341,7 @@ li {
             justify-content: center;
             flex-direction: column;
             gap: 1.5rem;
+            
 
             .singleinput {
                 .iconDiv {
@@ -377,6 +379,10 @@ li {
 
                 }
             }
+
+            .btnBlock{
+                justify-content: center;
+            }
         }
 
 
@@ -411,10 +417,10 @@ li {
                 margin-top: 2rem;
 
                 .singleInfo {
-                    
+
 
                     .number {
-                        
+
                         background: var(--PrimaryColor);
                         padding: 5px 12px;
                         border-radius: 3rem;
@@ -425,7 +431,8 @@ li {
 
 
                     }
-                    .heading{
+
+                    .heading {
                         margin-top: 1rem;
                     }
 
@@ -501,23 +508,24 @@ li {
                     .icon {
                         color: var(--whiteColor);
                     }
+                }
 
-                    .cardTitle {
-                        color: var(--blackColor);
-                        font-weight: 700;
-                    }
+                .cardTitle {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
 
-                    .colorOne {
-                        background: var(--colorOne);
-
-                    }
-
-                    .colorTwo {
-                        background: var(--colorTwo);
-
-                    }
+                .colorOne {
+                    background: var(--colorOne);
 
                 }
+
+                .colorTwo {
+                    background: var(--colorTwo);
+
+                }
+
+
             }
         }
     }
@@ -1103,8 +1111,8 @@ li {
                 margin-top: 5rem;
 
                 .textDiv {
-                    margin-top: 2rem;
-                    grid-template-columns: repeat(1, 1fr);
+                    margin-top: 0rem;
+                    grid-template-columns: repeat(2, 1fr);
                 }
             }
         }
@@ -1112,7 +1120,7 @@ li {
 
     .info {
         .infoContainer {
-            padding: 0 6 rem;
+            padding: 0 6rem;
 
             .titleDiv {
                 width: 90%;
@@ -1125,7 +1133,7 @@ li {
 
                 .singleCard {
                     max-width: 260px;
-                    padding: 3rem;
+                    padding: 3rem 1rem;
                 }
             }
         }
@@ -1161,7 +1169,7 @@ li {
         padding-top: 13rem;
 
         .mainText {
-            width: 80%;
+            width: 70%;
             padding-bottom: 1.5rem;
             font-size: 22px;
             line-height: 4rem;
@@ -1195,7 +1203,7 @@ li {
     //default styling
     p {
         font-size: 15px;
-        line-height: 22px;
+        line-height: 25px;
     }
 
     h4 {
@@ -1277,12 +1285,12 @@ li {
 
 @media screen and (min-width: 1332px) {
     .navBar {
-        .navBarOne {
+        .navBarTwo {
             .menu {
                 gap: 1rem;
 
                 .listItem {
-                    padding: 0 1.5rem;
+                    padding: 0 1rem;
                     font-size: 14px;
                 }
             }

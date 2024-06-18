@@ -5,14 +5,14 @@ import video from '../../assets/video.mp4'
 import aeroplane from '../../assets/takeOff.png'
 
 //Import AOS
-// import Aos from 'aos'
-// import 'aos/dist/aos.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
   //use effect to set animations duration
-  // useEffect(()=>{
-  //   Aos.init({duration: 2000})
-  // },[])
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
   return (
     <div className='home flex container'>
       <div className="mainText">
