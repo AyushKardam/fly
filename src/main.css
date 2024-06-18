@@ -320,9 +320,9 @@ li {
 }
 .support .sectionContainer .infoDiv .textDiv {
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 .support .sectionContainer .infoDiv .textDiv .singleInfo .number {
-  gap: 1.5rem;
   background: var(--PrimaryColor);
   padding: 5px 12px;
   border-radius: 3rem;
@@ -330,6 +330,9 @@ li {
   font-size: 13px;
   font-weight: 700;
   color: var(--whiteColor);
+}
+.support .sectionContainer .infoDiv .textDiv .singleInfo .heading {
+  margin-top: 1rem;
 }
 .support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne {
   background: var(--colorOne);
@@ -341,8 +344,11 @@ li {
   margin: auto;
 }
 .support .sectionContainer .infoDiv .imageDiv img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 45%;
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;
 }
 
 .info {
@@ -407,7 +413,7 @@ li {
   margin-top: 1rem;
   gap: 1.5rem;
 }
-.lounge .sectionContainer .textDiv .grids .singlrGrid .gridTitle {
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
   display: block;
   padding-bottom: 0.5rem;
   font-weight: 500;
@@ -706,7 +712,7 @@ li {
   }
   .navBar .navBarOne .none {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5 rem;
   }
   .navBar .navBarOne .none li {
     font-size: 13px;
@@ -721,25 +727,187 @@ li {
     justify-content: space-between;
     align-items: center;
   }
-  .navBar .navBarTwo .logoDiv .Logo {
+  .navBar .navBarTwo .logoDiv Logo {
     max-width: 20%;
   }
   .navBar .navBarTwo .menu {
     flex-direction: row;
-    gap: 0.5;
+    gap: 0.5rem;
   }
   .navBar .navBarTwo .menu .listItem {
     padding: 0 0.5rem;
     font-size: 14px;
     cursor: pointer;
-    color: var(--PrimaryColor);
+    color: var(--textColor);
     font-weight: 700;
   }
   .navBar .navBarTwo .menu .listItem:hover {
     color: var(--PrimaryColor);
     font-weight: 700;
   }
-  .navBar .navBarTwo .btnOne, .navBar .navBarTwo .toggleIcon {
+  .navBar .navBarTwo .btnOne,
+  .navBar .navBarTwo .toggleIcon {
     display: none;
   }
+  .search .sectionContainer .btns {
+    width: 70%;
+    border-radius: 3rem;
+    flex-direction: row;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search .sectionContainer .searchInputs .singleInput .texts input {
+    width: 100px;
+  }
+  .support .sectionContainer .infoDiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv {
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info .infoContainer {
+    padding: 0 6 rem;
+  }
+  .info .infoContainer .titleDiv {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+  }
+  .info .infoContainer .cardsDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .info .infoContainer .cardsDiv .singleCard {
+    max-width: 260px;
+    padding: 3rem;
+  }
+  .lounge .sectionContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lounge .sectionContainer .textDiv {
+    grid-area: 1;
+  }
+  .lounge .sectionContainer .textDiv .grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 960px) {
+  .home {
+    padding-top: 13rem;
+  }
+  .home .mainText {
+    width: 80%;
+    padding-bottom: 1.5rem;
+    font-size: 22px;
+    line-height: 4rem;
+  }
+  .search .sectionContainer .searchInputs {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .travelers .sectionContainer .travelersContainer {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
+  .navBar .navBarOne,
+  .navBar .navBarTwo {
+    padding: 1.5rem 5rem;
+  }
+  .navBar .navbar_With_Bg {
+    padding: 0 5rem;
+  }
+  .home .mainText {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImages .videoDiv {
+    width: 90%;
+    height: 300px;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15rem;
+  }
+  .home .homeImages .plane {
+    width: 100%;
+    top: -10%;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .navBar .navBarOne .menu {
+    gap: 1rem;
+  }
+  .navBar .navBarOne .menu .listItem {
+    padding: 0 1.5rem;
+    font-size: 14px;
+  }
+  .support .sectionContainer .infoDiv {
+    gap: 1rem;
+  }
+  .support .sectionContainer .infoDiv .textDiv .singleInfo p {
+    max-width: 500px;
+  }
+  .subscribe .sectionContainer {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home .homeImages .plane {
+    width: 90%;
+    top: -30%;
+  }
+}
+::-moz-selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

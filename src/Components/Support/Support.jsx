@@ -17,9 +17,10 @@ const Support = () => {
         <div className="infoDiv grid">
 
           <div className="textDiv grid">
+
             <div className="singleInfo">
               <span className='number'>01</span>
-              <h4>Travel requirements for Dubai</h4>
+              <h4 className='heading'>Travel requirements for Dubai</h4>
               <p>
                 Find help with booking and travel plans , see what to expect along
                 the journey with your favourite destination!
@@ -29,7 +30,7 @@ const Support = () => {
             <div className="singleInfo">
               <span className='number colorOne'>02</span>
               
-              <h4>Chauffeur services at your arrival</h4>
+              <h4 className='heading'>Chauffeur services at your arrival</h4>
               <p>
                 Find help with booking and travel plans , see what to expect along
                 the journey with your favourite destination!
@@ -38,7 +39,7 @@ const Support = () => {
 
             <div className="singleInfo">
               <span className='number colorTwo'>03</span>
-              <h4>Multi-risk travel insurance</h4>
+              <h4 className='heading'>Multi-risk travel insurance</h4>
               <p>
                 Find help with booking and travel plans , see what to expect along
                 the journey with your favourite destination!

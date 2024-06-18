@@ -18,7 +18,7 @@ const Lounge = () => {
 
                     <div className="grids grid">
 
-                        <div className="singlrGrid">
+                        <div className="singleGrid">
                             <span className='gridTitle'>
                                 Help through the airport
                             </span>
@@ -29,7 +29,7 @@ const Lounge = () => {
                         </div>
 
 
-                        <div className="singlrGrid">
+                        <div className="singleGrid">
                             <span className='gridTitle'>
                                 Priority Boarding
                             </span>
