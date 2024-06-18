@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 //imported destination images======>
 import paris from '../../assets/Paris.jpg'
@@ -13,6 +13,9 @@ import traveler1 from '../../assets/user (1).png'
 import traveler2 from '../../assets/user (2).png'
 import traveler3 from '../../assets/user (3).png'
 import traveler4 from '../../assets/user (4).png'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 // we are going to use high array method called map to display all the data =======>
@@ -45,7 +48,7 @@ const travelers = [
         id: 4,
         destinationImage: dubai,
         travelerImage: traveler4,
-        travelerName: 'Adarsh Singla',
+        travelerName: 'Adarsh Kumar',
         socialLink: '@adarshkumar08',
     }
 ]
@@ -59,10 +62,17 @@ const travelers = [
 //   }, [])
 
 const Travelers = () => {
+    
+    useEffect(()=>{
+        Aos.init({duration:2000})
+    }, [])
+
+
+    
     return (
         <div className=' travelers container section'>
             <div className="sectionContainer">
-                <h2>
+                <h2 data-aos = 'fade-left' data-aos-duration='2500' >
                     Top travelers of this month
                 </h2>
 
@@ -71,7 +81,7 @@ const Travelers = () => {
                     {travelers.map(({ id, destinationImage, travelerImage, travelerName, socialLink }) => {
                         return (
                             // {/* single passenger card */}
-                            <div key={id} className="singleTraveler">
+                            <div data-aos = 'fade-up' data-aos-duration='2500' key={id} className="singleTraveler">
 
                                 <img src={destinationImage} className='destinationImage' />
 
